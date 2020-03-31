@@ -1,8 +1,10 @@
 <?php
 $moviesArray = [
 	["cover"=>"https://img02.mgo-images.com/image/thumbnail?id=MMVF7C152D29230301DF2E49BFB499580B83&amp;ql=70&amp;sizes=310x465", "title"=> "Onward"],
-	["cover"=>"https://img04.mgo-images.com/image/thumbnail?id=MMVC42505A1956D82FEDB67ED902E867DAB7&amp;ql=70&amp;sizes=310x465", "title"=> "The Invisible Man (2020)"],
+	["cover"=>"https://img04.mgo-images.com/image/thumbnail?id=MMVC42505A1956D82FEDB67ED902E867DAB7&amp;ql=70&amp;sizes=310x465", "title"=> "The Invisible Man)"],
 	["cover"=>"https://img04.mgo-images.com/image/thumbnail?id=MMV390767535C7B45795FF68C08A8E8F1E18&amp;ql=70&amp;sizes=310x465", "title"=> "The Hunt "],
+	["cover"=>"https://img03.mgo-images.com/image/thumbnail?id=MMVD2932726C5CDEC7AC277D3F82BBAEB550&amp;ql=70&amp;sizes=310x465", "title"=> "Emma"],
+	["cover"=>"https://img02.mgo-images.com/image/thumbnail?id=MMVF3C6F7B2D924CE182A5D94FB51C9853AC&amp;ql=70&amp;sizes=310x465", "title"=> "Uncut Gems"],
 	["cover"=>"https://img04.mgo-images.com/image/thumbnail?id=MMVD4CA8ADF6F5DE9C915542F85425AD9F1D&amp;ql=70&amp;sizes=310x465", "title"=> "The Call of the Wild"],
 	["cover"=>"https://img06.mgo-images.com/image/thumbnail?id=MMV3FFCD4C626E61D79BAC131C4E65975E42&amp;ql=70&amp;sizes=310x465", "title"=> "Jumanji: The Next Level"],
 	["cover"=>"https://img09.mgo-images.com/image/thumbnail?id=MMV72016207CBB35D3E06A0CD32776E5DD9C&amp;ql=70&amp;sizes=310x465", "title"=> "Downhill"],
@@ -20,15 +22,13 @@ $moviesArray = [
 	["cover"=>"https://img01.mgo-images.com/image/thumbnail?id=MMV7F96023395277A3762AEB4EA9B4B866BC&amp;ql=70&amp;sizes=310x465", "title"=> "Dolittle"],
 	["cover"=>"https://img09.mgo-images.com/image/thumbnail?id=MMVE3C69DB36038460D20761A461E1F62E83&amp;ql=70&amp;sizes=310x465", "title"=> "The Way Back"],
 	["cover"=>"https://img03.mgo-images.com/image/thumbnail?id=MMV1DC848BBEADCADD650AF96617FFE433BC&amp;ql=70&amp;sizes=310x465", "title"=> "Just Mercy"],
-	["cover"=>"https://img03.mgo-images.com/image/thumbnail?id=MMVD2932726C5CDEC7AC277D3F82BBAEB550&amp;ql=70&amp;sizes=310x465", "title"=> "Emma. (2020)"],
 	["cover"=>"https://img09.mgo-images.com/image/thumbnail?id=MMV2E4F63D2F3C343356393248C80587CD18&amp;ql=70&amp;sizes=310x465", "title"=> "Knives Out"],
-	["cover"=>"https://img02.mgo-images.com/image/thumbnail?id=MMVF3C6F7B2D924CE182A5D94FB51C9853AC&amp;ql=70&amp;sizes=310x465", "title"=> "Uncut Gems"],
 	["cover"=>"https://img01.mgo-images.com/image/thumbnail?id=MMV4EE8E53FFB7F5A9A210C0A8514A9ACD52&amp;ql=70&amp;sizes=310x465", "title"=> "The Gentlemen"],
 	["cover"=>"https://img06.mgo-images.com/image/thumbnail?id=MMVC295347175B0B02534FDD1089B0309B7A&amp;ql=70&amp;sizes=310x465", "title"=> "Ford v Ferrari"],
 	["cover"=>"https://img03.mgo-images.com/image/thumbnail?id=MMVD95D98D3CED75EEF1253578146FBAAD18&amp;ql=70&amp;sizes=310x465", "title"=> "A Beautiful Day in the Neighborhood"],
 	["cover"=>"https://img05.mgo-images.com/image/thumbnail?id=MMVE62354D7EDE037A4E39525D01D21942F7&amp;ql=70&amp;sizes=310x465", "title"=> "Bombshell"],
 	["cover"=>"https://img06.mgo-images.com/image/thumbnail?id=MMV09935488D7D0995ED62E89854CA71EE08&amp;ql=70&amp;sizes=310x465", "title"=> "Richard Jewell "],
-	["cover"=>"https://img09.mgo-images.com/image/thumbnail?id=MMV462B46003DBCE5ADBF236317B8AB5B6CA&amp;ql=70&amp;sizes=310x465", "title"=> "Little Women (2019)"],
+	["cover"=>"https://img09.mgo-images.com/image/thumbnail?id=MMV462B46003DBCE5ADBF236317B8AB5B6CA&amp;ql=70&amp;sizes=310x465", "title"=> "Little Women"],
 	["cover"=>"https://img09.mgo-images.com/image/thumbnail?id=MMV910D270AFAC15C2939DB09766B373FC02&amp;ql=70&amp;sizes=310x465", "title"=> "Manhunt"],
 	["cover"=>"https://img03.mgo-images.com/image/thumbnail?id=MMVA4419B5F16F23AF19DB052BE844E31B17&amp;ql=70&amp;sizes=310x465", "title"=> "Humboldt: Epic Explorer"],
 	["cover"=>"https://img02.mgo-images.com/image/thumbnail?id=MMVF5FAD104711D8FAD9B8E0F9541DB7BB85&amp;ql=70&amp;sizes=310x465", "title"=> "Frequent Visitors"],
@@ -49,7 +49,8 @@ function getMovies($moviesArray){
 	$movies = [];
 	$ratings = ['R','PG13','PG','G','NC17'];
 	$links = [
-		'https://www.youtube.com/watch?v=XCPj4JPbKtA',
+		'https://www.youtube.com/embed/XCPj4JPbKtA',
+		//'https://www.youtube.com/embed/XCPj4JPbKtA?rel=0;&autoplay=1&autohide=1&showinfo=0&controls=0',
 	];
 	
 	foreach($moviesArray as $movie){
@@ -97,31 +98,6 @@ $movies = getMovies($moviesArray);
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/solid.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
-	<script>
-		//https://codepen.io/JacobLett/pen/xqpEYE
-		$(document).ready(function() {
-			
-			// Gets the video src from the data-src on each button
-			var $videoSrc;  
-			$('.video-btn').click(function() {
-			    $videoSrc = $(this).data( "src" );
-			});
-			console.log($videoSrc);
-		  
-			// when the modal is opened autoplay it  
-			$('#myModal').on('shown.bs.modal', function (e) {
-				    
-				// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-				$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
-			})
-			  
-			// stop playing the youtube video when I close the modal
-			$('#myModal').on('hide.bs.modal', function (e) {
-				// a poor man's stop video
-				$("#video").attr('src',$videoSrc); 
-			}) 
-		});
-	</script>
   </head>
   <body>
   	<div class="container">
@@ -132,22 +108,22 @@ $movies = getMovies($moviesArray);
   	</div>
   	<div class="container">
   	<?php
-	foreach($movies as $movie){
+	foreach($movies as $key => $movie){
 	?>
 	
 		<div class="movie-card">
 			<div class="movie-header" style="background: url(<?php echo $movie["cover"];?>); background-size: cover;">
 				<div class="header-icon-container text-center">
-					<a class="video-btn" data-toggle="modal" href="<?php echo $movie["link"];?>" data-target="#myModal">
+					<button type="button" id="playBtn<?php echo $key;?>" class="btn btn-link" data-toggle="modal" data-target="#videoModal<?php echo $key;?>" data-src="<?php echo $movie["link"];?>">
 						<i class="fas fa-play header-icon"></i>
-					</a>
+					</button>
 				</div>
 			</div><!--movie-header-->
 			<div class="movie-content">
 				<div class="movie-content-header">
-					<a href="<?php echo $movie["link"];?>">
-						<h3 class="movie-title"><?php echo $movie["title"];?></h3>
-					</a>
+					<button type="button" id="playTitle<?php echo $key;?>" class="px-0 btn btn-link text-left" data-toggle="modal" data-target="#videoModal<?php echo $key;?>" data-src="<?php echo $movie["link"];?>">
+						<h3 class="movie-title text-left" style="padding-left:0px;"><?php echo $movie["title"];?></h3>
+					</button>
 				</div>
 				<div class="movie-info">
 					<div class="info-section">
@@ -164,13 +140,33 @@ $movies = getMovies($moviesArray);
 					</div><!--row-->
 				</div>
 			</div><!--movie-content-->
-		</div><!--movie-card-->  	
-	  	
-	<?php  	
-  	}
-  	?>
-	
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		</div><!--movie-card-->
+		<script>
+		$(document).ready(function() {
+		
+			var $videoSrc;  
+			$('#playBtn<?php echo $key;?>').click(function() {
+			    $videoSrc = $(this).data( "src" );
+			});
+			$('#playTitle<?php echo $key;?>').click(function() {
+			    $videoSrc = $(this).data( "src" );
+			});
+		
+			// when the modal is opened autoplay it  
+			$('#videoModal<?php echo $key;?>').on('shown.bs.modal', function (e) {	    
+				//$("#video<?php echo $key;?>").attr('src',$videoSrc); 
+				$("#video<?php echo $key;?>").attr('src',$videoSrc + "?rel=0;&autoplay=1&autohide=1&showinfo=0&controls=0" );
+			})
+		 
+		
+			// stop playing the youtube video when I close the modal
+			$('#videoModal<?php echo $key;?>').on('hide.bs.modal', function (e) {
+			    $("#video<?php echo $key;?>").attr('src',$videoSrc); 
+			}) 
+		
+		});
+		</script>
+		<div class="modal fade" id="videoModal<?php echo $key;?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
@@ -178,12 +174,16 @@ $movies = getMovies($moviesArray);
 							<span aria-hidden="true">&times;</span>
 						</button>        
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+							<iframe class="embed-responsive-item" src="" id="video<?php echo $key;?>"  allowscriptaccess="always" allow="autoplay"></iframe>
 						</div>
 					</div>
+		
 				</div>
 			</div>
-		</div>  
+		</div> 
+	<?php  	
+  	}
+  	?>
 
 	</div><!--container-->
 <!--
